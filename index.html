@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart</title>
+
+    <!-- CSS linking  -->
+    <link rel="stylesheet" href="flipkart.css">
+
+    <!-- Bootstrap Linking  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Fontawsome linking  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- Nav bar  -->
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg  bg-primary fixed-top" style="background-color: #ffffff;">
+            <div class="container-fluid mb-3">
+               <a href="#navbar"> <img src="./Images/logo1.png" alt="No image" class="ms-5 "></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                    <form class="search d-flex mt-2  me-5 input-group-lg" role="search">
+                        <input class="form-control  " type="search" placeholder="Search for Products, Brands and More"
+                            aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link ms-5 text-light fw-bold" href="https://seller.flipkart.com/sell-online?utm_source=fkwebsite&utm_medium=websitedirect"><i class="fa-solid fa-shop"></i>&nbsp
+                                Become A Seller</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle ms-5 text-light fw-bold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-regular fa-user"></i>
+                                &nbsp Sign In
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/account/login?signup=true&ret=/">New Customer? <span
+                                            class="fw-bold text-primary">Signup</span></a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/account/login?signup=true&ret=/"><i class="fa-regular fa-user"
+                                            style="color: #1c6bf2;"></i>&nbsp My Profile</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/account/login?signup=true&ret=/"><i class="fa-solid fa-fan"
+                                            style="color: #1c6bf2;"></i>&nbsp Flipkart Plus Zone</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/account/login?signup=true&ret=/"><i class="fa-solid fa-box"
+                                            style="color: #1c6bf2;"></i>&nbsp Orders</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/account/login?signup=true&ret=/"><i class="fa-regular fa-heart"
+                                            style="color: #1c6bf2;"></i>&nbsp Wishlist</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/account/login?signup=true&ret=/"><i class="fa-solid fa-gift"
+                                            style="color: #1c6bf2;"></i>&nbsp Rewards</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/account/login?signup=true&ret=/"><i class="fa-regular fa-credit-card"
+                                            style="color: #1c6bf2;"></i>&nbsp Gift Card</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-5 ">
+                            <a class="nav-link text-light fw-bold" href="https://www.flipkart.com/viewcart?exploreMode=true&preference=FLIPKART"><i class="fa-solid fa-cart-shopping"></i>
+                                &nbsp Cart</a>
+                        </li>
+                        <li class="nav-item dropdown ms-5">
+                            <a class="nav-link text-light fw-bold" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/communication-preferences/push?t=all"><i class="fa-regular fa-bell"
+                                            style="color: #1c6bf2;"></i> &nbsp Notification Preferences</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/helpcentre"><i class="fa-solid fa-headset"
+                                            style="color: #1c6bf2;"></i>&nbsp 24<i class="fa-solid fa-xmark"></i>7
+                                        Customer Care</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://advertising.flipkart.com/login?returl=/?otracker=ch_vn_advertise_header"><i class="fa-solid fa-chart-line"
+                                            style="color: #1c6bf2;"></i> &nbspAdvertise</a></li>
+                                <li><a class="dropdown-item fw-bold" href="https://www.flipkart.com/mobile-apps?otracker=ch_vn_mobile_apps"><i class="fa-solid fa-download"
+                                            style="color: #1c6bf2;"></i>&nbsp Download App</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- Catogories  -->
+    <section id="Catogories">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <div class="col-1 me-3">
+                    <a href="#iphone">
+                        <img src="./Images/apple.jpg" alt="" height="75" width="75" class="companies">
+                    </a>
+                        <h6 class="text-center text">Apple</h6>
+                    
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#samsung"><img src="./Images/samsung.jpg" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Samsung</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#pixel"><img src="./Images/google.png" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Pixel</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#offer2"><img src="./Images/xiomi.jpg" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Xiomi</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#offer2"><img src="./Images/moto.png" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Motorola</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#offer2"><img src="./Images/oppo.jpg" alt="" height="75" width="75" class="companies"></a href="#offer2">
+                    <h6 class="text-center">Oppo</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#offer2"><img src="./Images/poco.jpg" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">POCO</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#offer2"><img src="./Images/realme.png" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">Realme</h6>
+                </div>
+                <div class="col-1 me-3">
+                    <a href="#offer2"><img src="./Images/vivo.jpg" alt="" height="75" width="75" class="companies"></a>
+                    <h6 class="text-center">VIVO</h6>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-1"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Carausal  -->
+    <section id="Carausal">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="./Images/carausal11.webp" class="d-block w-100" alt="No Image">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./Images/carausal2.webp" class="d-block w-100" alt="No image">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Images/carausal3.webp" class="d-block w-100" alt="No image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- offer section  -->
+    <section id="offer">
+        <div class="section-3">
+            <a href="https://www.flipkart.com/bank-offer-store?PARAM=4985"><img src="./Images/img of offer.webp"
+                    alt="no image"></a>
+        </div>
+
+    </section>
+
+    <!-- offer grid  -->
+    <section id="offer2">
+
+        <!-- Row 1  -->
+        <div class="row1">
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/motorola-edge-40-viva-magenta-256-gb/p/itm05e373bd204cb?pid=MOBGPJZABN3GPDZ7&lid=LSTMOBGPJZABN3GPDZ7D67ZGP&otracker=clp_banner_1_9.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_JKW5DDNL4HLS&fm=neo%2Fmerchandising&iid=M_aa95e41c-b0d4-45b6-9f8b-99a432d2f13a_9.JKW5DDNL4HLS&ppt=hp&ppn=homepage&ssid=yi4aulnav40000001697356482249"><img src="./Images/offer1.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-efe6tis5q1/pr?sid=tyy,4io&collection-tab-name=OPPO+reno10+5G&param=29282&otracker=clp_banner_2_9.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_2NHEEPJ7S0T3&fm=neo%2Fmerchandising&iid=M_a3ec9a6b-c772-4c01-b50d-59043d355a61_9.2NHEEPJ7S0T3&ppt=pp&ppn=pp&ssid=yi4aulnav40000001697356482249"><img src="./Images/offer2.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/google-pixel-7a-sea-128-gb/p/itmb4d7b100b1a4d?pid=MOBGZCQM8PZEGRWU&lid=LSTMOBGZCQM8PZEGRWU0X8NQN&otracker=clp_banner_3_9.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_ZGTQ7GJNBFA2&fm=neo%2Fmerchandising&iid=M_b3306be8-3902-4066-afbc-6dad737db03d_9.ZGTQ7GJNBFA2&ppt=browse&ppn=browse&ssid=aoyzc9za9s0000001697356520358"><img src="./Images/offer3.png" alt="No image"></a>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row1">
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/samsung-galaxy-s22-5g-green-128-gb/p/itm92c75094f3b93?pid=MOBGGG2YKYPWPCNP&lid=LSTMOBGGG2YKYPWPCNPJQJIS6&otracker=clp_banner_1_10.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_F05HXNE4GCC9&fm=neo%2Fmerchandising&iid=M_044cd364-0a44-4d89-aad0-d7687b4f5261_10.F05HXNE4GCC9&ppt=pp&ppn=pp&ssid=aoyzc9za9s0000001697356520358"><img src="./Images/offer4.png" alt="no image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-f209e59h2r/pr?sid=tyy,4io&collection-tab-name=Poco+F5&param=2828&otracker=clp_banner_2_10.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_NZAGBITWGHVO&fm=neo%2Fmerchandising&iid=M_fc4f248f-f62a-47b7-bc81-6752caa6c477_10.NZAGBITWGHVO&ppt=pp&ppn=pp&ssid=aoyzc9za9s0000001697356520358"><img src="./Images/offer5.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-gcxawvd1ly/pr?sid=tyy,4io&collection-tab-name=+vivo+T2+Pro+5G&param=0876&otracker=clp_banner_3_10.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_HG9Z3IARC603&fm=neo%2Fmerchandising&iid=M_13cc4e39-b2da-4fe2-8d80-1fea8f1001c0_10.HG9Z3IARC603&ppt=browse&ppn=browse&ssid=5293v5m3vk0000001697356596617"><img src="./Images/offer6.png" alt="No image"></a>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row1">
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-txm32ljb5x/pr?sid=tyy,4io&collection-tab-name=realme+11+pro+plus+5G&param=99909&otracker=clp_banner_1_11.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_QRW6R1NCS0RQ&fm=neo%2Fmerchandising&iid=M_37c202ab-e956-47ea-aafb-14366439f096_11.QRW6R1NCS0RQ&ppt=browse&ppn=browse&ssid=g6mnsk35k00000001697356608147"><img src="./Images/offer7.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/mobiles/~cs-oajv2x9tfe/pr?sid=tyy%2C4io&collection-tab-name=Samsung%20Galaxy%20F54%205G&param=6566&otracker=clp_banner_2_11.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_1CJY6HTQTXK8&fm=neo%2Fmerchandising&iid=M_8d0dffb7-1a2a-476c-93bb-a6c1d3184e16_11.1CJY6HTQTXK8&ppt=browse&ppn=browse&ssid=kv1beshmy80000001697356624503"><img src="./Images/offer8.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-e8l8qk2i2m/pr?sid=tyy,4io&collection-tab-name=Nothing+Phone+2&param=0054&otracker=clp_banner_3_11.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_AQSN2A2U3789&fm=neo%2Fmerchandising&iid=M_79b012c4-bf3d-4f8e-bcdc-c43b32f550a5_11.AQSN2A2U3789&ppt=browse&ppn=browse&ssid=vmgmla57a80000001697356660753"><img src="./Images/offer9.png" alt="No image"></a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Top deals under 10000  -->
+    <section id="tenthousand">
+        <div>
+            <img src="./Images/under 10000.png" alt="" class="imgg">
+        </div>
+
+        <!-- Row 1  -->
+        <div class="row1">
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/mobiles/~cs-817ef5cp9m/pr?sid=tyy%2C4io&collection-tab-name=Samsung%20F14&param=76238&otracker=clp_banner_1_18.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_O9WOL4KNFJT4&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_18.O9WOL4KNFJT4&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10001.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-vxo2sm8jwu/pr?sid=tyy%2C4io&collection-tab-name=realme+c53&p%5B%5D=facets.ram%255B%255D%3D6%2BGB&p%5B%5D=facets.internal_storage%255B%255D%3D128%2B-%2B255.9%2BGB&param=6908&otracker=clp_banner_2_18.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_Y98JX7ADVAH1&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_18.Y98JX7ADVAH1&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10002.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-6ky41lperx/pr?sid=tyy%2C4io&collection-tab-name=POCO+M6+Pro+5G&param=536487&p%5B%5D=facets.internal_storage%255B%255D%3D128%2B-%2B255.9%2BGB&param=14441&otracker=clp_banner_3_18.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_7FJPJ0S24XUV&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_18.7FJPJ0S24XUV&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10003.png" alt="No image"></a>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row1">
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-ypudwscf9z/pr?sid=tyy,4io&collection-tab-name=POCO+C55&param=3211132&otracker=clp_banner_1_19.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_ZKZPVHAZI8N7&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_19.ZKZPVHAZI8N7&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10004.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-8fe0x4dygh/pr?sid=tyy,4io&collection-tab-name=Redmi+12&param=321113232&otracker=clp_banner_2_19.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_4GGXHIT9K9WD&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_19.4GGXHIT9K9WD&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10005.png" alt="No image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/infinix-hot-30i-mirror-black-128-gb/p/itm8b42a43b35895?pid=MOBGNPK2U9WQFJZX&lid=LSTMOBGNPK2U9WQFJZXOPAJY7&otracker=clp_banner_3_19.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_15FK8197PIZ3&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_19.15FK8197PIZ3&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10006.png" alt="No image"></a>
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="row1">
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/mobiles/~cs-zv5ga1phc2/pr?sid=tyy%2C4io&collection-tab-name=POCO+C51&sort=price_desc&param=32111&otracker=clp_banner_1_20.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_QG866CE761LV&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_20.QG866CE761LV&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10007.png" alt="No Image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/mobiles/~cs-61ewaheif5/pr?sid=tyy%2C4io&collection-tab-name=Samsung%20Galaxy%20F04&param=98922&otracker=clp_banner_2_20.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_IG1L2EK610LC&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_20.IG1L2EK610LC&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10008.png" alt="No Image"></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 d-flex justify-content-center">
+                <a href="https://www.flipkart.com/tyy/4io/~cs-q0owbooru0/pr?sid=tyy,4io&collection-tab-name=realme+C51&param=989&otracker=clp_banner_3_20.bannerX3.BANNER_mobile-phones-big-billion-days-2023-i8we74-store_41YO95T5WFRU&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_20.41YO95T5WFRU&ppt=browse&ppn=browse&ssid=3my26s7phc0000001697356675673"><img src="./Images/10009.png" alt="No image"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Iphone section  -->
+    <section id="iphone">
+        <div>
+            <img src="./Images/iphone.png" alt="" class="imgg">
+        </div>
+        <div class="iphone">
+            <div class="responsive">
+                <div class="iphones">
+                    <a target="_blank" href="https://www.flipkart.com/apple-iphone-14-blue-128-gb/p/itmdb77f40da6b6d?pid=MOBGHWFHSV7GUFWA&lid=LSTMOBGHWFHSV7GUFWA3AV8J8&marketplace=FLIPKART&sattr[]=color&sattr[]=storage&st=color">
+                        <img src="./Images/ip14blue.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Apple iPhone 14(Blue,128 GB)<br>
+                        <h6 class="text-success">4.7<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(1,26,234)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>57,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">69,900</span></small><span
+                                class="text-success text-decoration-none"> 17% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="iphones">
+                    <a target="_blank" href="https://www.flipkart.com/apple-iphone-14-starlight-128-gb/p/itm3485a56f6e676?pid=MOBGHWFHABH3G73H&lid=LSTMOBGHWFHABH3G73HCNASCL&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_40_646YNHUFS6QS_MC.MOBGHWFHABH3G73H&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Iphone%2BSmartphones_1_40.productCard.PMU_V2_APPLE%2BiPhone%2B14%2B%2528Starlight%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHWFHABH3G73H_neo%2Fmerchandising_0&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Iphone%2BSmartphones_LIST_productCard_cc_1_NA_view-all&cid=MOBGHWFHABH3G73H">
+                        <img src="./Images/ipstarlight.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Apple iPhone 14(Starlight,128 GB)<br>
+                        <h6 class="text-success">4.7<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(1,26,234)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>57,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">69,900</span></small><span
+                                class="text-success text-decoration-none"> 17% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="iphones">
+                    <a target="_blank" href="https://www.flipkart.com/apple-iphone-14-midnight-128-gb/p/itm9e6293c322a84?pid=MOBGHWFHECFVMDCX&lid=LSTMOBGHWFHECFVMDCXSSCYWA&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_40_646YNHUFS6QS_MC.MOBGHWFHECFVMDCX&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Iphone%2BSmartphones_2_40.productCard.PMU_V2_APPLE%2BiPhone%2B14%2B%2528Midnight%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHWFHECFVMDCX_neo%2Fmerchandising_1&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Iphone%2BSmartphones_LIST_productCard_cc_2_NA_view-all&cid=MOBGHWFHECFVMDCX">
+                        <img src="./Images/ipblack.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Apple iPhone 14(Midnight,128 GB)<br>
+                        <h6 class="text-success">4.7<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(1,26,234)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>57,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">69,900</span></small><span
+                                class="text-success text-decoration-none"> 17% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="iphones">
+                    <a target="_blank" href="https://www.flipkart.com/apple-iphone-14-purple-128-gb/p/itm0b581eba85e08?pid=MOBGHWFHQFSQYBFU&lid=LSTMOBGHWFHQFSQYBFUUF0OWI&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_40_646YNHUFS6QS_MC.MOBGHWFHQFSQYBFU&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Iphone%2BSmartphones_3_40.productCard.PMU_V2_APPLE%2BiPhone%2B14%2B%2528Purple%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHWFHQFSQYBFU_neo%2Fmerchandising_2&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Iphone%2BSmartphones_LIST_productCard_cc_3_NA_view-all&cid=MOBGHWFHQFSQYBFU">
+                        <img src="./Images/ip+purple.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Apple iPhone 14(Purple,128 GB)<br>
+                        <h6 class="text-success">4.7<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(1,26,234)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>57,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">69,900</span></small><span
+                                class="text-success text-decoration-none"> 17% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="iphones">
+                    <a target="_blank" href="https://www.flipkart.com/apple-iphone-14-plus-blue-128-gb/p/itmac8385391b02b?pid=MOBGHWFHUYWGB5F2&lid=LSTMOBGHWFHUYWGB5F24T4IJV&marketplace=FLIPKART&sattr[]=color&sattr[]=storage&st=color">
+                        <img src="./Images/ip+blue.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Apple iPhone 14 Plus(Blue,128 GB)<br>
+                        <h6 class="text-success">4.6<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(29,405)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>65,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">79,900</span></small><span
+                                class="text-success text-decoration-none"> 17% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="iphones">
+                    <a target="_blank" href="https://www.flipkart.com/apple-iphone-14-plus-starlight-128-gb/p/itmc922ddc8af349?pid=MOBGHWFHVCB2YZYR&lid=LSTMOBGHWFHVCB2YZYREG7ZLM&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_40_646YNHUFS6QS_MC.MOBGHWFHVCB2YZYR&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Iphone%2BSmartphones_5_40.productCard.PMU_V2_APPLE%2BiPhone%2B14%2BPlus%2B%2528Starlight%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHWFHVCB2YZYR_neo%2Fmerchandising_4&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Iphone%2BSmartphones_LIST_productCard_cc_5_NA_view-all&cid=MOBGHWFHVCB2YZYR">
+                        <img src="./Images/ip+white.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Apple iPhone 14 Plus(Blue,128 GB)<br>
+                        <h6 class="text-success">4.6<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(29,405)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>65,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">79,900</span></small><span
+                                class="text-success text-decoration-none"> 17% off</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Pixel section  -->
+    <section id="pixel">
+        <div>
+            <img src="./Images/pixelsec.png" alt="" class="imgg">
+        </div>
+        <div class="pixel">
+            <div class="responsive">
+                <div class="pixels">
+                    <a target="_blank" href="https://www.flipkart.com/google-pixel-7a-sea-128-gb/p/itmb4d7b100b1a4d?pid=MOBGZCQM8PZEGRWU&lid=LSTMOBGZCQM8PZEGRWU0X8NQN&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_42_PQHYBUMCNRML_MC.MOBGZCQM8PZEGRWU&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Google%2BPixel%2BSmartphones_1_42.productCard.PMU_V2_Google%2BPixel%2B7a%2B%2528Sea%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGZCQM8PZEGRWU_neo%2Fmerchandising_0&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Google%2BPixel%2BSmartphones_LIST_productCard_cc_1_NA_view-all&cid=MOBGZCQM8PZEGRWU">
+                        <img src="./Images/pixelsea.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Google Pixel 7a(Sea,128 GB)<br>
+                        <h6 class="text-success">4.1<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(6,816)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>35,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">43,900</span></small><span
+                                class="text-success text-decoration-none"> 18% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="pixels">
+                    <a target="_blank" href="https://www.flipkart.com/google-pixel-7-snow-128-gb/p/itm45d75002be0e7?pid=MOBGHW44PRZ8WP2M&lid=LSTMOBGHW44PRZ8WP2MEGIXNO&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_42_PQHYBUMCNRML_MC.MOBGHW44PRZ8WP2M&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Google%2BPixel%2BSmartphones_2_42.productCard.PMU_V2_Google%2BPixel%2B7%2B%2528Snow%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHW44PRZ8WP2M_neo%2Fmerchandising_1&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Google%2BPixel%2BSmartphones_LIST_productCard_cc_2_NA_view-all&cid=MOBGHW44PRZ8WP2M">
+                        <img src="./Images/pixelsnow.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Google Pixel 7(Snow,128 GB)<br>
+                        <h6 class="text-success">4.3<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(7,434)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>41,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">59,900</span></small><span
+                                class="text-success text-decoration-none"> 30% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="pixels">
+                    <a target="_blank" href="https://www.flipkart.com/google-pixel-7-pro-snow-128-gb/p/itmb74dc5c3b3eb5?pid=MOBGHW44HHEMNGHW&lid=LSTMOBGHW44HHEMNGHWSCSMWJ&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_42_PQHYBUMCNRML_MC.MOBGHW44HHEMNGHW&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Google%2BPixel%2BSmartphones_4_42.productCard.PMU_V2_Google%2BPixel%2B7%2BPro%2B%2528Snow%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHW44HHEMNGHW_neo%2Fmerchandising_3&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Google%2BPixel%2BSmartphones_LIST_productCard_cc_4_NA_view-all&cid=MOBGHW44HHEMNGHW">
+                        <img src="./Images/pixelblack.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Google Pixel 7(Obsidian,128 GB)<br>
+                        <h6 class="text-success">4.3<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(7,434)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>41,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">59,900</span></small><span
+                                class="text-success text-decoration-none"> 30% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="pixels">
+                    <a target="_blank" href="https://www.flipkart.com/google-pixel-7-pro-snow-128-gb/p/itmb74dc5c3b3eb5?pid=MOBGHW44HHEMNGHW&lid=LSTMOBGHW44HHEMNGHWSCSMWJ&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_42_PQHYBUMCNRML_MC.MOBGHW44HHEMNGHW&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Google%2BPixel%2BSmartphones_4_42.productCard.PMU_V2_Google%2BPixel%2B7%2BPro%2B%2528Snow%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHW44HHEMNGHW_neo%2Fmerchandising_3&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Google%2BPixel%2BSmartphones_LIST_productCard_cc_4_NA_view-all&cid=MOBGHW44HHEMNGHW">
+                        <img src="./Images/pixelprosnow.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Google Pixel 7 Pro(Snow,128 GB)<br>
+                        <h6 class="text-success">4.4<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(3,840)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>63,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">84,900</span></small><span
+                                class="text-success text-decoration-none"> 24% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="pixels">
+                    <a target="_blank" href="https://www.flipkart.com/google-pixel-7-pro-obsidian-128-gb/p/itmb74dc5c3b3eb5?pid=MOBGHW44NRFHVRZY&lid=LSTMOBGHW44NRFHVRZYZBL0DS&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_42_PQHYBUMCNRML_MC.MOBGHW44NRFHVRZY&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Google%2BPixel%2BSmartphones_5_42.productCard.PMU_V2_Google%2BPixel%2B7%2BPro%2B%2528Obsidian%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGHW44NRFHVRZY_neo%2Fmerchandising_4&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Google%2BPixel%2BSmartphones_LIST_productCard_cc_5_NA_view-all&cid=MOBGHW44NRFHVRZY">
+                        <img src="./Images/pixelproblack.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Google Pixel 7 Pro(Obsidian,128 GB)<br>
+                        <h6 class="text-success">4.4<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(3,840)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>63,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">84,900</span></small><span
+                                class="text-success text-decoration-none"> 24% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="pixels">
+                    <a target="_blank" href="https://www.flipkart.com/google-pixel-6a-charcoal-128-gb/p/itme5ae89135d44e?pid=MOBGFKX5YUXD74Z3&lid=LSTMOBGFKX5YUXD74Z3MXA2OB&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_42_PQHYBUMCNRML_MC.MOBGFKX5YUXD74Z3&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Google%2BPixel%2BSmartphones_6_42.productCard.PMU_V2_Google%2BPixel%2B6a%2B%2528Charcoal%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGFKX5YUXD74Z3_neo%2Fmerchandising_5&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Google%2BPixel%2BSmartphones_LIST_productCard_cc_6_NA_view-all&cid=MOBGFKX5YUXD74Z3">
+                        <img src="./Images/pixel6ablack.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Google Pixel 6a(Charcoal,128 GB)<br>
+                        <h6 class="text-success">4.3<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(68,353)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>30,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">43,900</span></small><span
+                                class="text-success text-decoration-none"> 29% off</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Samsung Section  -->
+    <section id="samsung">
+        <div>
+            <img src="./Images/samsec.png" alt="" class="imgg">
+        </div>
+        <div class="samsung">
+            <div class="responsive">
+                <div class="samsungs">
+                    <a target="_blank" href="https://www.flipkart.com/samsung-galaxy-f14-5g-b-a-e-purple-128-gb/p/itmdc1c60aa887ff?pid=MOBGNBFNNZER2WZW&lid=LSTMOBGNBFNNZER2WZWDG8CJ0&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_34_3L0TQQ7DPPK6_MC.MOBGNBFNNZER2WZW&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Samsung%2BSmartphones_1_34.productCard.PMU_V2_SAMSUNG%2BGalaxy%2BF14%2B5G%2B%2528B.A.E.%2BPurple%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGNBFNNZER2WZW_neo%2Fmerchandising_0&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Samsung%2BSmartphones_LIST_productCard_cc_1_NA_view-all&cid=MOBGNBFNNZER2WZW">
+                        <img src="./Images/samf14.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Samsung Galaxy F14 5G(Purple,128 GB)<br>
+                        <h6 class="text-success">4.2<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(44,333)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>12,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">18,900</span></small><span
+                                class="text-success text-decoration-none"> 32% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="samsungs">
+                    <a target="_blank" href="https://www.flipkart.com/samsung-galaxy-s21-fe-5g-graphite-128-gb/p/itm7be0f72fff180?pid=MOBGBPFZSPRG8GSU&lid=LSTMOBGBPFZSPRG8GSUHAU48C&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_34_3L0TQQ7DPPK6_MC.MOBGBPFZSPRG8GSU&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Samsung%2BSmartphones_2_34.productCard.PMU_V2_SAMSUNG%2BGalaxy%2BS21%2BFE%2B5G%2B%2528Graphite%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGBPFZSPRG8GSU_neo%2Fmerchandising_1&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Samsung%2BSmartphones_LIST_productCard_cc_2_NA_view-all&cid=MOBGBPFZSPRG8GSU">
+                        <img src="./Images/sams21.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Samsung Galaxy S21 FE 5G(Graphite,128 GB)<br>
+                        <h6 class="text-success">4.3<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(89,745)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>29,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">74,900</span></small><span
+                                class="text-success text-decoration-none"> 60% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="samsungs">
+                    <a target="_blank" href="https://www.flipkart.com/samsung-galaxy-f14-5g-omg-black-128-gb/p/itm0d3b7a1452e4c?pid=MOBGNBFNDYQR9WH4&lid=LSTMOBGNBFNDYQR9WH4WXOLMD&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_34_3L0TQQ7DPPK6_MC.MOBGNBFNDYQR9WH4&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Samsung%2BSmartphones_3_34.productCard.PMU_V2_SAMSUNG%2BGalaxy%2BF14%2B5G%2B%2528OMG%2BBlack%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGNBFNDYQR9WH4_neo%2Fmerchandising_2&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Samsung%2BSmartphones_LIST_productCard_cc_3_NA_view-all&cid=MOBGNBFNDYQR9WH4">
+                        <img src="./Images/samf14black.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Samsung Galaxy F14 5G(Black,128 GB)<br>
+                        <h6 class="text-success">4.2<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(16,049)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>11,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">17,900</span></small><span
+                                class="text-success text-decoration-none"> 34% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="samsungs">
+                    <a target="_blank" href="https://www.flipkart.com/samsung-galaxy-f23-5g-aqua-blue-128-gb/p/itme54bc0c2292f4?pid=MOBGBKQF45XPEUHA&lid=LSTMOBGBKQF45XPEUHAWFUXR6&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_34_3L0TQQ7DPPK6_MC.MOBGBKQF45XPEUHA&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Samsung%2BSmartphones_4_34.productCard.PMU_V2_SAMSUNG%2BGalaxy%2BF23%2B5G%2B%2528Aqua%2BBlue%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGBKQF45XPEUHA_neo%2Fmerchandising_3&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Samsung%2BSmartphones_LIST_productCard_cc_4_NA_view-all&cid=MOBGBKQF45XPEUHA">
+                        <img src="./Images/samf23.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Samsung Galaxy F23 5G(Aqua Blue,128 GB)<br>
+                        <h6 class="text-success">4.3<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(2,26,234)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>15,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">23,900</span></small><span
+                                class="text-success text-decoration-none"> 35% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="samsungs">
+                    <a target="_blank" href="https://www.flipkart.com/samsung-galaxy-a54-5g-awesome-graphite-256-gb/p/itm205731bda3f72?pid=MOBGNE4S9UY84GD6&lid=LSTMOBGNE4S9UY84GD6BAR8RB&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_34_3L0TQQ7DPPK6_MC.MOBGNE4S9UY84GD6&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Samsung%2BSmartphones_5_34.productCard.PMU_V2_SAMSUNG%2BGalaxy%2BA54%2B5G%2B%2528Awesome%2BGraphite%252C%2B256%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGNE4S9UY84GD6_neo%2Fmerchandising_4&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Samsung%2BSmartphones_LIST_productCard_cc_5_NA_view-all&cid=MOBGNE4S9UY84GD6">
+                        <img src="./Images/sama54.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Samsung Galaxy A54 5G(Graphite,256 GB)<br>
+                        <h6 class="text-success">4.3<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(1,405)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>37,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">45,900</span></small><span
+                                class="text-success text-decoration-none"> 18% off</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="samsungs">
+                    <a target="_blank" href="https://www.flipkart.com/samsung-galaxy-f23-5g-aqua-blue-128-gb/p/itm89d3030e3857e?pid=MOBGBKQFHKZHTHKJ&lid=LSTMOBGBKQFHKZHTHKJRGO4UI&marketplace=FLIPKART&fm=neo%2Fmerchandising&iid=M_cae84a1d-513e-469b-9682-bd10338fdbe0_34_3L0TQQ7DPPK6_MC.MOBGBKQFHKZHTHKJ&ppt=clp&ppn=mobile-phones-big-billion-days-2023-i8we74-store&ssid=3my26s7phc0000001697356675673&otracker=clp_pmu_v2_Samsung%2BSmartphones_6_34.productCard.PMU_V2_SAMSUNG%2BGalaxy%2BF23%2B5G%2B%2528Aqua%2BBlue%252C%2B128%2BGB%2529_mobile-phones-big-billion-days-2023-i8we74-store_MOBGBKQFHKZHTHKJ_neo%2Fmerchandising_5&otracker1=clp_pmu_v2_PINNED_neo%2Fmerchandising_Samsung%2BSmartphones_LIST_productCard_cc_6_NA_view-all&cid=MOBGBKQFHKZHTHKJ">
+                        <img src="./Images/samf23.webp" alt="Cinque Terre">
+                    </a>
+                    <div class="desc">Samsung Galaxy F23 5G(Aqua Blue,128 GB)<br>
+                        <h6 class="text-success">4.2<i class="fa-solid fa-star fa-sm" style="color: #144d15;"></i><span
+                                class="text-dark">(47,405)</span></h6>
+                        <h6 class="fw-bold"><i class="fa-solid fa-indian-rupee-sign text-secondary"></i>14,999</h6>
+                        <h6><small class="text-body-secondary">
+                                <i class="fa-solid fa-indian-rupee-sign text-secondary"></i> <span
+                                    class="card-text text-decoration-line-through text-secondary">22,900</span></small><span
+                                class="text-success text-decoration-none"> 36% off</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+        <!-- Image of offer  -->
+        <section id="images">
+            <div>
+                <img src="./Images/o1.png" alt="No image">
+                <img src="./Images/o2.png" alt="No image">
+                <img src="./Images/o3.png" alt="No image">
+                <img src="./Images/o4.png" alt="No image">
+                <img src="./Images/o6.png" alt="No image">
+                <img src="./Images/o7.png" alt="No image">
+                <img src="./Images/o8.png" alt="No image">
+            </div>
+    
+        </section>
+
+    <!-- footer  -->
+    <div class="card text-center">
+        <div class="card-body text-light bg-dark fw-bold">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h4>ABOUT</h4>
+                    <p><a href="">Contact Us</a></p>
+                    <p><a href="">About Us</a></p>
+                    <p><a href="">Careers</a></p>
+                    <p><a href="">Flipkart Stories</a></p>
+                    <p><a href="">Press</a></p>
+                    <p><a href="">Flipkart Wholesale</a></p>
+                    <p><a href="">Cleartrip</a></p>
+                    <p><a href="">Corporate Information</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>HELP</h4>
+                    <p><a href="">Payments</a></p>
+                    <p><a href="">Shipping</a></p>
+                    <p><a href="">Cancellation & Returns</a></p>
+                    <p><a href="">FAQ</a></p>
+                    <p><a href="">Report infringement</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>CONSUMER POLICY</h4>
+                    <p><a href="">Cancellation & Returns</a></p>
+                    <p><a href="">Terms of Use</a></p>
+                    <p><a href="">Security</a></p>
+                    <p><a href="">Privacy</a></p>
+                    <p><a href="">Sitemap</a></p>
+                    <p><a href="">Grievance Redressal</a></p>
+                    <p><a href="">EPR Compilance</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>SOCIAL</h4>
+                    <p><a href="">Facebook</a></p>
+                    <p><a href="">Twitter</a></p>
+                    <p><a href="">Youtube</a></p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Mail Us:</h4>
+                    <p>Flipkart Internet Private Lt,</p>
+                    <p> Buildings Alyssa, Begonia & </p>
+                    <p> Clove Embassy Tech Village, </p>
+                    <p> Outter Ring Road, </p>
+                    <p> Devarabeesanahalli Village, </p>
+                    <p>Bengaluru, 560103,</p>
+                    <p> Karnataka, India </p>
+                </div>
+                <div class="col-sm-2">
+                    <h4>Registered Office Address:</h4>
+                    <p>Flipkart Internet Private Lt,</p>
+                    <p>Buildings Alyssa, Begonia &</p>
+                    <p>Clove Embassy Tech Village,</p>
+                    <p>Outer Ring Road</p>
+                    <p>Devarabeesanahalli Village,</p>
+                    <p>Bengaluru, 560103,</p>
+                    <p>Karnataka, India</p>
+                    <p>CIN:U51109KA2012PTC066107</p>
+                    <p>Telephone:<a href="">044-45614700</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-light bg-dark pb-3 pt-3 container-fluid">
+            <div class="col-sm container-fluid">
+                <a class="me-5 ms-5" href="https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect"><i
+                        class="fa-solid fa-store"></i> Become a Seller</a>
+                <a class="me-5 ms-5" href="https://brands.flipkart.com/"><i class="fa-solid fa-rectangle-ad"></i> Advertise</a>
+                <a class="me-5 ms-5" href="https://www.flipkart.com/the-gift-card-store?otracker=${otracker}_footer_navlinks"><i
+                        class="fa-solid fa-gift"></i> Gift Cards</a>
+                <a class="me-5 ms-5" href="https://www.flipkart.com/helpcentre?otracker=${otracker}_footer_navlinks"><i
+                        class="fa-solid fa-circle-info"></i> Help Center</a>
+                <a class="me-5 ms-5" href="">@2007-2003 Flipkart.com</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+<!-- Bootstrap Script Linking  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
